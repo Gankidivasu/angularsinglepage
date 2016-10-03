@@ -1,0 +1,54 @@
+<div class="container" ng-controller="IndexController">
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-3 col-sm-push-9">
+            <p style="padding:20px;"></p>
+            <h3 align=center>Our Lip smacking Culinary Creations</h3>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+            <div class = "media">
+                <a class = "pull-left" ng-href="/#/menu/_id">
+                    <img class = "media-object" src = {{dish.image}} alt = "image of dish">
+                </a>
+                <div class = "media-body">
+                    <p>{{dish.description}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-3">
+            <p style="padding:20px;"></p>
+            <h3 align=center>This Month's Promotions</h3>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <div class = "media">
+                <a class = "pull-left" ng-href="#">
+                   <img class = "media-object" src={{promotions.image}} alt="image of promotions">
+                </a>
+                <div class = "media-body">
+                    <p>{{promotions.description}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row row-content">
+        <div class="col-xs-12 col-sm-3 col-sm-push-9">
+            <p style="padding:20px;"></p>
+            <h3 align=center>Meet out Culinary Specialists</h3>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+            <div class = "media">
+                <a class = "pull-left" ng-href="/#/aboutus/_id">
+                    <img class = "media-object" src={{leadership.image}} alt = "chef photo">
+                </a>
+                <div class = "media-body">
+                    <p>{{leadership.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
