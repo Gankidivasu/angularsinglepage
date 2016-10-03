@@ -61,13 +61,13 @@ angular.module('vasuapp')
     }])
     
     .controller('IndexController',['$scope','$routeParams','menuFactory','corporateFactory', function ($scope,$routeParams,menuFactory,corporateFactory) {
-        var promotions = menuFactory.getPromotion(parseInt($routeParams.id,10));
-        $scope.promotions = this.promotions;
-        $scope.leader = corporateFactory.getLeaders(parseInt($routeParams.id,10));
+        $scope.promotions = menuFactory.getPromotion(0);
+        $scope.indexleader = corporateFactory.getLeaders(1);
+        $scope.getDishs = menuFactory.getDish(3);
 }])
     .controller ('AboutController',['$scope','corporateFactory', function($scope,corporateFactory){
     //   $scope.leaderships = menuFactory.getLeaders();
        var leadership = corporateFactory.getLeader();
-        $scope.leaders = this.leadership;
+        $scope.leaders = leadership;
     }])
 

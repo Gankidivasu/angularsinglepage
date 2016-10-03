@@ -54,19 +54,18 @@
     <div class="row row-content">
         <div class="col-xs-12 col-sm-9">
             <h2>Corporate Leadership</h2>
-            <p> hi </p>
-            <ul class="media-list">
-                <li class = "media" ng-repeat = "leaders in leadership">
-                   <div class = "media-list tab-pane fade in active">
+            <ul class="media-list tab-pane fade in active">
+                <li class = "media" ng-repeat = "lead in leaders">
+                   <div class = "media-left meida-middle">
                     <a ng-href="#/aboutus">
-                        <img class = "media-object" ng-src={{leaders.image}} alt="author image">
+                        <img class = "media-object" ng-src={{lead.image}} alt="author image">
                     </a>
                    </div>
                     <div class = "media-body">
-                    <p>{{leaders.description}}</p>
+                    <p>{{lead.description}}</p>
                     </div>
                  <footer>
-                     -- {{leaders.name}} the {{leaders.designation}}
+                     -- {{lead.name}} the {{lead.designation}}
                      </footer>
                 </li>
             </ul>
